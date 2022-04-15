@@ -1,20 +1,9 @@
-import { Component } from 'react'
-import './app.scss'
+import Taro from "@tarojs/taro";
+import React, { useEffect, useState } from "react";
+import "./app.scss";
 
-class App extends Component {
+const App = props => {
+  return props.children;
+};
 
-  componentDidMount () {}
-
-  componentDidShow () {}
-
-  componentDidHide () {}
-
-  componentDidCatchError () {}
-
-  // this.props.children 是将要会渲染的页面
-  render () {
-    return this.props.children
-  }
-}
-
-export default App
+export default App;
